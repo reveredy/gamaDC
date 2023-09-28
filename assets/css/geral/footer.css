@@ -1,0 +1,127 @@
+.rodape-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #222222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.rodape-cont {
+  max-width: 1300px;
+
+  display: flex;
+  justify-items: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.logo-rodape .logo img {
+  max-width: 120px;
+}
+
+.rodape-cont .rodape-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.rodape-content .logo-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rodape-content .logo-rodape .sobre {
+  max-width: 40ch;
+}
+
+.rodape-cont .rodape-content .menu-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rodape-cont .rodape-content .menu-rodape .menu-lista-rodape {
+  display: grid;
+  gap: 15px;
+}
+
+.rodape-cont .rodape-content .parceiros-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rodape-cont .rodape-content .parceiros-rodape .prevenir img {
+  max-width: 100px;
+}
+
+.rodape-cont .rodape-content .parceiros-rodape .braulios img {
+  max-width: 80px;
+}
+
+.rodape-cont .rodape-content .contato-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rodape-cont .rodape-content .contato-rodape .telefone,
+.rodape-cont .rodape-content .contato-rodape .email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rodape-cont .rodape-content .contato-rodape img {
+  max-width: 15px;
+}
+
+.rodape-cont .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+
+  color: #3c9997;
+}
+
+.rodape-cont .copy span {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .rodape-cont .rodape-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .rodape-cont .copy {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .rodape-cont .rodape-content .parceiros-rodape img {
+    max-width: 170px;
+  }
+
+  .rodape-cont .rodape-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: flex-start;
+    padding: 25px;
+  }
+
+  .rodape-content .logo-rodape .sobre {
+    text-align: center;
+  }
+}

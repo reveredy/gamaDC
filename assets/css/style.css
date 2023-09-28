@@ -1,0 +1,24 @@
+/* Geral */
+@import url("./geral/header.css");
+@import url("./geral/footer.css");
+@import url("./geral/whatsApp.css");
+/* Fim Geral */
+
+/* Global */
+@import url("./global.css");
+/* Fim Global */
+
+/* Home */
+@import url("./home/banner-home.css");
+@import url("./home/servicos.css");
+@import url("./home/sobre_nos.css");
+@import url("./home/contato.css");
+/* Fim Home */
+
+/* Utilitários */
+@import url("./utilitarios.css");
+/* Fim Utilitários */
+
+/* Parcerias */
+@import url("./parcerias/parcerias.css");
+/* Fim Parcerias */

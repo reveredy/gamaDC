@@ -1,0 +1,111 @@
+.sobre-nos-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sobre-nos-cont {
+  max-width: 1300px;
+
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.sobre-nos-cont .content {
+  max-width: 600px;
+
+  display: grid;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.sobre-nos-cont .content .cab {
+  text-align: center;
+}
+
+.sobre-nos-cont .content .historia {
+  display: grid;
+  gap: 25px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.sobre-nos-cont .content .historia .sobre,
+.sobre-nos-cont .content .historia .missao,
+.sobre-nos-cont .content .historia .visao,
+.sobre-nos-cont .content .historia .duvidas {
+  display: grid;
+  gap: 8px;
+}
+
+.sobre-nos-cont .content .historia .duvidas #cta {
+  font-weight: 500;
+}
+
+.sobre-nos-cont .content .historia .duvidas #cta a {
+  color: dodgerblue;
+}
+
+.sobre-nos-cont .content .historia .duvidas #cta a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1075px) {
+  .sobre-nos-cont .img img {
+    max-width: 305px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre-nos-cont {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sobre-nos-cont .img img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 545px) {
+  .sobre-nos-cont .img img {
+    max-width: 390px;
+  }
+
+  .sobre-nos-cont .content .cab .titulo-grande {
+    font-size: 2rem;
+  }
+
+  .sobre-nos-cont .content .cab .subtitulo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .sobre-nos-cont .img img {
+    max-width: 300px;
+  }
+
+  .sobre-nos-cont .content .cab .titulo-grande {
+    font-size: 1.76rem;
+  }
+
+  .sobre-nos-cont .content .cab .subtitulo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .sobre-nos-cont .content .cab .titulo-grande {
+    font-size: 1.5rem;
+  }
+
+  .sobre-nos-cont .content .cab .subtitulo {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,109 @@
+.whatsAppContato {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.whatsAppContato img {
+  width: 43px;
+}
+
+#whatsImg.ativo {
+  animation: shake 0.3s normal;
+}
+
+.whatsAppContato .animado.ativo {
+  animation: animaWhats 2s forwards;
+}
+
+.whatsAppContato p {
+  width: 0;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  max-width: 14rem;
+
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0), translateY(0);
+  }
+  15% {
+    transform: translateX(3px);
+  }
+  30% {
+    transform: translateX(-3px);
+  }
+  45% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  90% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes animaWhats {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 14rem;
+  }
+}
+
+/* animacao para mensagem abrir e fechar ao tremer o botao do whats */
+/* @keyframes animaWhats {
+  0%,
+  100% {
+    width: 0;
+  }
+  40% {
+    width: 18rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  .whatsAppContato {
+    bottom: 30px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .whatsAppContato {
+    bottom: 35px;
+    z-index: 1;
+  }
+
+  .whatsAppContato img {
+    width: 38px;
+  }
+
+  .whatsAppContato p {
+    font-size: 1rem;
+    max-width: 15rem;
+  }
+
+  @keyframes animaWhats {
+    0%,
+    100% {
+      width: 0;
+    }
+    50% {
+      width: 15rem;
+    }
+  }
+}
