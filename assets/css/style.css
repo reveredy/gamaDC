@@ -1,24 +1,16 @@
-/* Geral */
-@import url("./geral/header.css");
-@import url("./geral/footer.css");
-@import url("./geral/whatsApp.css");
-/* Fim Geral */
+.navbar-brand img {
+  max-width: 120px;
+}
 
-/* Global */
-@import url("./global.css");
-/* Fim Global */
+.navbar .contato img {
+  max-width: 35px;
+}
 
-/* Home */
-@import url("./home/banner-home.css");
-@import url("./home/servicos.css");
-@import url("./home/sobre_nos.css");
-@import url("./home/contato.css");
-/* Fim Home */
+@media (min-width: 576px) {
+  .navbar-brand img {
+    max-width: 80px;
+  }
+}
 
-/* Utilitários */
-@import url("./utilitarios.css");
-/* Fim Utilitários */
-
-/* Parcerias */
-@import url("./parcerias/parcerias.css");
-/* Fim Parcerias */
+@import url("./css/bootstrap.css");
+@import url("bootstrap.css");

@@ -7,456 +7,479 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="./assets/imgs/geral/favico-gamadc.ico" type="image/x-icon" />
     <title>GamaDC - Medicina do Trabalho e Ambulatorial | Canoas RS</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="menu-bg">
-        <div class="menu-cont">
-            <div class="logo">
-                <a href="#home">
-                    <img src="./assets/imgs/geral/logo_gamadc.png" alt="GamaDC Medicina do Trabalho Logotipo">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="menu-lista">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre-nos">Sobre Nós</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#parceiros">Parceiros</a></li>
-                    <li><a href="#contato">Contato</a></li>
+    <header class="navbar navbar-expand-md fixed-top bg-light shadow-sm">
+        <nav class="container-md menu-bg">
+            <a href="#home" class="navbar-brand">
+                <img src="./assets/imgs/geral/logo_gamadc.png" alt="GamaDC Medicina do Trabalho Logotipo">
+            </a>
+            <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbar" aria-expanded="false" aria-label="Toggle Navigation">
+                <ul class="nav navbar-nav nav-underline">
+                    <li class="nav-item ms-4 ms-md-0">
+                        <a href="#home" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item ms-4 ms-md-0">
+                        <a href="#sobre-nos" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item ms-4 ms-md-0">
+                        <a href="#servicos" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item ms-4 ms-md-0">
+                        <a href="#parceiros" class="nav-link">Parceiros</a>
+                    </li>
+                    <li class="nav-item ms-4 ms-md-0">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
                 </ul>
-            </nav>
-            <article class="contato">
-                <div class="facebook">
-                    <a href="" target="_blank"><img src="./assets/imgs/geral/facebook.png" alt="Facebook GamaDC"></a>
-                </div>
-                <div class="instagram">
-                    <a href="" target="_blank"><img src="./assets/imgs/geral/instagram.png" alt="Instagram GamaDC"></a>
-                </div>
-                <div class="whats">
-                    <p></p>
-                    <a href="" target="_blank"><img src="./assets/imgs/geral/whatsapp.png" alt="WhatsApp GamaDC entre em contato"></a>
-                </div>
-            </article>
-            <div class="menu-mobile">
-                <img src="./assets/imgs/geral/menu-mobile.svg" alt="Menu Mobile">
             </div>
-        </div>
+            <article class="contato">
+                <a href="https://wa.me/5551981184644" target="_blank"">
+                    <img src=" ./assets/imgs/geral/whatsapp.png" alt="WhatsApp de contato GamaDC">
+                </a>
+            </article>
+        </nav>
     </header>
-    <article class="banner-bg" id="home">
-        <div class="banner-cont">
-            <div class="banner-imgs fade">
+    <article class="carousel carousel-dark slide" id="home" data-bs-ride="carousel" data-bs-ride="true" style="margin-top: 105px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
                 <a href="https://wa.me/5551981184644" target="_blank">
                     <picture>
-                        <source srcset="./assets/imgs/banner-home/banner_mobile_1.png" media="(max-width: 450px)">
-                        <source srcset="./assets/imgs/banner-home/banner_medio_1.png" media="(max-width: 875px)">
-                        <img src="./assets/imgs/banner-home/banner_large_1.png" alt="">
+                        <source srcset="./assets/imgs/banner-home/banner_mobile_1.png" media="(max-width: 450px)" class="d-block w-100">
+                        <source srcset="./assets/imgs/banner-home/banner_medio_1.png" media="(max-width: 875px)" class="d-block w-100">
+                        <img src="./assets/imgs/banner-home/banner_large_1.png" alt="" class="d-block w-100">
                     </picture>
                 </a>
             </div>
-            <div class="banner-imgs fade">
+            <div class="carousel-item">
                 <picture>
-                    <source srcset="./assets/imgs/banner-home/banner_mobile_2.png" media="(max-width: 450px)">
-                    <source srcset="./assets/imgs/banner-home/banner_medio_2.png" media="(max-width: 875px)">
-                    <img src="./assets/imgs/banner-home/banner_large_2.png" alt="">
+                    <source srcset="./assets/imgs/banner-home/banner_mobile_2.png" media="(max-width: 450px)" class="d-block w-100">
+                    <source srcset="./assets/imgs/banner-home/banner_medio_2.png" media="(max-width: 875px)" class="d-block w-100">
+                    <img src="./assets/imgs/banner-home/banner_large_2.png" alt="" class="d-block w-100">
                 </picture>
             </div>
-            <div class="banner-imgs fade">
+            <div class="carousel-item">
                 <picture>
-                    <source srcset="./assets/imgs/banner-home/banner_mobile_3.png" media="(max-width: 450px)">
-                    <source srcset="./assets/imgs/banner-home/banner_medio_3.png" media="(max-width: 875px)">
-                    <img src="./assets/imgs/banner-home/banner_large_3.png" alt="">
+                    <source srcset="./assets/imgs/banner-home/banner_mobile_3.png" media="(max-width: 450px)" class="d-block w-100">
+                    <source srcset="./assets/imgs/banner-home/banner_medio_3.png" media="(max-width: 875px)" class="d-block w-100">
+                    <img src="./assets/imgs/banner-home/banner_large_3.png" alt="" class="d-block w-100">
                 </picture>
             </div>
-            <a class="prev" onclick="passarImg(-1)">&#10094;</a>
-            <a class="next" onclick="passarImg(1)">&#10095;</a>
         </div>
-        <div>
-            <span class="dot" onclick="imgAtual(1)"></span>
-            <span class="dot" onclick="imgAtual(2)"></span>
-            <span class="dot" onclick="imgAtual(3)"></span>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </article>
-    <article class="sobre-nos-bg" id="sobre-nos">
-        <div class="sobre-nos-cont">
-            <div class="img">
-                <img src="./assets/imgs/geral/map-pin.png" alt="Mapa de localidades">
-            </div>
-            <section class="content">
-                <div class="cab">
-                    <h1 class="titulo-grande">Bem Vindos a GamaDC</h1>
-                    <h3 class="subtitulo">Medicina Ocupacional e atendimento Ambulatorial</h3>
-                </div>
-                <section class="historia">
-                    <div class="sobre">
-                        <h4 class="titulo-pequeno">Um pouco sobre nossa história:</h4>
-                        <p>
-                            Nossa equipe está pronta para oferecer soluções personalizadas que atendam às suas necessidades especificas. Atendemos em todo Rio Grande do Sul
-                        </p>
-                    </div>
-                    <div class="missao">
-                        <h4 class="titulo-pequeno">Missão:</h4>
-                        <p>
-                            Nosso compromisso é atender às necessidades das empresas de forma ágil e eficaz, adaptando-nos às suas demandas em conformidade com a legislação vigente.
-                        </p>
-                        <p>
-                            Fazemos isso com um firme compromisso com a segurança, ética, responsabilidade e qualidade em todos os aspectos de nosso trabalho.
-                        </p>
-                    </div>
-                    <div class="visao">
-                        <h4 class="titulo-pequeno">Visão:</h4>
-                        <p>
-                            Nossa visão é ser líderes no fornecimento de soluções empresariais, superando expectativas e entregando resultados excepcionais.
-                        </p>
-                        <p>
-                            Com uma equipe de profissionais capacitados e engajados, estamos dedicados a promover o sucesso de nossos clientes em um ambiente empresarial em constante evolução.
-                        </p>
-                    </div>
-                    <div class="duvidas">
-                        <h4>Conte com a GamaDC:</h4>
-                        <p>
-                            Juntos, construiremos um futuro melhor e mais seguro para todos.
-                        </p>
-                        <p>
-                            GamaDC <br> Garantindo segurança e cuidado com a saúde no ambiente de trabalho.
-                        </p>
-                        <p id="cta">
-                            Tem alguma dúvida?<br><a href="#contato">Entre em contato agora mesmo</a>
-                        </p>
-                    </div>
-                </section>
-            </section>
-        </div>
-    </article>
-    <main class="servicos-bg" id="servicos">
-        <div class="servicos-cont">
-            <h1 class="titulo-grande">Serviços de excelência para proteger a sua empresa e seus colaboradores.</h1>
-            <ul class="servicos-lista">
-                <li>
-                    <img src="./assets/imgs/servicos1-medicina-ocupacional.jpg" alt="">
-                    <h2 style="text-align: center;">Medicina Ocupacional<br>&<br>Ambulatorial</h2>
-                    <p>Atendimento realizado diretamente no ambulatório da sua empresa.</p>
-
-                    <a href="#medicina-ocupacional" class="btn ocupacional animated-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Saiba mais
-                    </a>
-                </li>
-                <li>
-                    <img src="./assets/imgs/servicos2-seguranca-do-trabalho.jpg" alt="">
-                    <h2>Exames Complementares</h2>
-                    <div class="desc">
-                        <p>Se for de comum acordo entre nós e a empresa contratante.</p>
-                        <p>Os Exames Complementares podem ser realizados na Prevenir de Esteio.</p>
-                    </div>
-
-                    <a href="#exames-complementares" class="btn exames-complementares animated-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Saiba mais
-                    </a>
-                </li>
-                <li>
-                    <img src="./assets/imgs/servicos3-palestras-treinamentos.jpg" alt="">
-                    <h2>Treinamentos</h2>
-                    <p>A Braulios Neto é nossa parceira na área de treinamentos, palestras e assessoria.</p>
-                    <a href="#braulios-treinamentos" class="btn treinamentos animated-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Saiba mais
-                    </a>
-                </li>
-            </ul>
-            <div class="todos-servicos">
-                <section class="todos-servicos-cont">
-                    <ul class="servicos-colapse servicos-exames-conosco" id="medicina-ocupacional">
-                        <li id="equipe">
-                            <p class="titulo-pequeno" style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.2rem; color: #0b1b3d;">Nossa equipe conta com:</p>
-                            <p>
-                                Médico do Trabalho, Médico Examinador, Técnico de Enfermagem do Trabalho e Técnico de Enfermagem.
-                            </p>
-                            <p>
-                                Entramos com a mão de obra técnica qualificada, conforme necessidade da empresa.
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_pcmso.png" alt="Coordenamos as atividades PCMSO - GamaDC">
-                            <h3>Coordenar PCMSO</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_exame_admissional.png" alt="Fazemos exames admissionais e demissionais - GamaDC">
-                            <h3>Exames Admissionais</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_exames_periodicos.png" alt="Realizamos exames periódicos - GamaDC">
-                            <h3>Exames Periódicos</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_mudanca_funcao.png" alt="Realizamos exames de mudança de função - gamadc">
-                            <h3>Mudança de Função</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_retorno_tabalho.png" alt="Realizamos exames de retorno ao trabalho após afastamento">
-                            <h3>Retorno ao Trabalho</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_laudo_pcd.png" alt="Emitimos laudos que atestam aptidão de PCDs para desempenhar suas funções">
-                            <h3>Laudos para Pessoas com Deficiência (PCD)</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_atestados.png" alt="Emitimos e validamos atestados, garantindo a integridade do processo.">
-                            <h3>Validação e Emissão de Atestados</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/gamadc_atendimento_ambulatorial.png" alt="Realizamos avaliação física para garantir o bem-estar do colaborador">
-                            <h3>Atendimento ambulatorial</h3>
-                        </li>
-                    </ul>
-                    <ul class="servicos-colapse servicos-exames-complementares" id="exames-complementares">
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_raioX.png" alt="Exame de Radiografia de torax, realizado pela empresa parceira Prevenir">
-                            <h3>Radiografia de Tórax (RX Tórax)</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_espirometria.png" alt="Exame de Espirometria, realizado pela empresa parceira Prevenir">
-                            <h3>Espirometria</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_audiometria.png" alt="Exame de Audiometria, realizado pela empresa parceira Prevenir">
-                            <h3>Audiometria</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_eletrocardiograma.png" alt="Eletrocardiograma realizado pela empresa parceira Prevenir">
-                            <h3>Eletrocardiograma (ECG)</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_eletroencefalograma.png" alt="Eletroencefalograma realizado pela empresa parceira Prevenir">
-                            <h3>Eletroencefalograma (EEG)</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_ortho_rater.png" alt="Exame de acuidade visual, realizado pela empresa parceira Prevenir">
-                            <h3>Ortho Rater (Exame de Acuidade Visual)</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/prevenir_outros_exames.png" alt="Para mais exames laboratoriais, chame via whatsApp">
-                            <h3>Outros Exames de Laboratório</h3>
-                        </li>
-                    </ul>
-                    <ul class="servicos-colapse servicos-treinamentos" id="braulios-treinamentos">
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_palestras.png" alt="Palestra Braulios Neto">
-                            <h3>Palestras SIPAT</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_palestras.png" alt="Palestras Motivacionais na sua empresa Braulios Neto">
-                            <h3>Palestras Motivacionais</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_treinamento.png" alt="Treinamentos em Analise Preliminar de Risco Braulios Neto">
-                            <h3>Treinamento de Analise Preliminar de Risco</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_treinamento.png" alt="Treinamento de Investigação de Risco Braulios Neto">
-                            <h3>Treinamento de Investigação de Acidentes</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_treinamento.png" alt="Treinamento de Integração de Segurança para novos colaboradores Braulios Neto">
-                            <h3>Treinamento e Integração de Segurança</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_treinamento.png" alt="Treinamentos para NR 5 e NR 11 Braulios Neto">
-                            <h3>Treinamentos de NR 5 e NR 11</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_formacao_de_brigadista.png" alt="Formacao de brigadistas Braulios Neto">
-                            <h3>Formação de Brigadistas</h3>
-                        </li>
-                        <li>
-                            <img src="./assets/imgs/icones/braulios_formacao_de_resgatista.png" alt="Formação de Resgatistas Braulios Neto">
-                            <h3>Formação de Resgatistas</h3>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-    </main>
-    <div class="parcerias-bg" id="parceiros">
-        <section class="parcerias-cont">
-            <div class="apresentacao">
-                <h2 class="titulo-grande">Trabalhamos com os Melhores Parceiros</h2>
+    <article id="sobre-nos" class="container my-5">
+        <section class="row g-5">
+            <img src="./assets/imgs/geral/map-pin.png" alt="Mapa de localidades" class="col-lg-5 align-self-center">
+            <section class="col-12 col-lg-7">
                 <div>
-                    <p>Embora sejamos uma empresa independente e totalmente capacitada, contamos com alguns parceiros para melhor atende-los.</p>
-                    <p>Com essas parcerias contamos com uma gama maior de serviços, evitando a procura em vários lugares para assuntos do mesmo interesse.</p>
+                    <h1 class="titulo-lg text-center">Bem Vindos a GamaDC</h1>
+                    <h3 class="display-7 fw-bold text-center titulo-md mb-3">Medicina Ocupacional e atendimento Ambulatorial</h3>
                 </div>
-            </div>
-            <section class="parceiros">
-                <div class="prevenir">
-                    <div class="img">
-                        <img src="./assets/imgs/geral/Prevenir-logo.png" alt="Prevenir Exames">
-                        <span>
-                            <p>Sua empresa precisa de cuidado</p>
-                            <p>Você precisa da Prevenir</p>
-                        </span>
-                        <address class="contato">
-                            <a>
-                                <img src="./assets/imgs/geral/localizacao.png" alt="Endereço Prevenir">
-                                R. Dom Pedro, n.55, Esteio | RS
-                            </a>
-                            <a href="tel:555134591126">
-                                <img src="./assets/imgs/geral/telefone.png" alt="Telefone de contato Prevenir">
-                                (51) 3459.1126
-                            </a>
-                        </address>
+                <section id="sobreAccordion" class="accordion">
+                    <div class="accordion-item mb-2">
+                        <button class="accordion-button py-1" type="button" data-bs-toggle="collapse" data-bs-target="#item1" aria-expanded="true" aria-controls="item1">
+                            <h4 class="h5">Um pouco sobre nossa história:</h4>
+                        </button>
+                        <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#sobreAccordion">
+                            <div class="accordion-body texto-md">
+                                <p>
+                                    A GAMA DC foi criada por volta de 1998. O nome se deu em função dos nomes e sobrenomes dos fundadores.
+                                </p>
+                                <p>
+                                    Dr Guimarães nosso eterno mestre, Med.do Trab.e RT Cezar e Dilnara tec.em Enf. Gama letra do alfabeto Grego e sobrenome do Dr Guimarães.
+                                </p>
+                                <p>
+                                    Trabalhamos por mais de 15 anos para uma das maiores empresas de RAMO da América do Sul, Também prestavamos serviços a outras empresas de menor porte com o mesmo profissionalismo, comprometimento e ética.
+                                </p>
+                                <p>
+                                    Hoje conto com a Dra. Aline, Médica do Trabalho e Perita como RT.
+                                </p>
+                                <p>
+                                    Prestamos serviços para a GERDAU até 2017, retornando agora em 2022 para prestarmos serviços por mais um período.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <h2 class="subtitulo">Exames Complementares</h2>
-                        <ul class="lista">
-                            <li>
-                                <p>Audiometria</p>
-                            </li>
-                            <li>
-                                <p>Acuidade visual</p>
-                            </li>
-                            <li>
-                                <p>Eletrocardiograma</p>
-                            </li>
-                            <li>
-                                <p>Eletroencefalograma</p>
-                            </li>
-                            <li>
-                                <p>Espirometria</p>
-                            </li>
-                            <li>
-                                <p>Exames Laboratoriais</p>
-                            </li>
-                            <li>
-                                <p>Exames Toxicológicos</p>
-                            </li>
-                            <li>
-                                <p>Raio X</p>
-                            </li>
-                            <li>
-                                <p>Perícias</p>
-                            </li>
-                            <li>
-                                <p>Palestras</p>
-                            </li>
-                        </ul>
+                    <div class="accordion-item  mb-2">
+                        <button class="accordion-button py-1" type="button" data-bs-toggle="collapse" data-bs-target="#item2" aria-expanded="false" aria-controls="item2">
+                            <h4 class="h5">Missão:</h4>
+                        </button>
+                        <div id="item2" class="accordion-collapse collapse" data-bs-parent="#sobreAccordion">
+                            <div class="accordion-body texto-md">
+                                <p>
+                                    Nosso compromisso é atender às necessidades das empresas de forma ágil e eficaz, adaptando-nos às suas demandas em conformidade com a legislação vigente.
+                                </p>
+                                <p>
+                                    Fazemos isso prezando a segurança, ética, responsabilidade e qualidade em todos os aspectos de nosso trabalho.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="braulios">
-                    <div class="img">
-                        <img src="./assets/imgs/geral/braulio-logo2.png" alt="Prevenir clinica médica esteio">
-                        <address class="contato">
-                            <a href="https://www.instagram.com/brauliosneto.fire/" target="_blank">
-                                <img src="./assets/imgs/geral/instagram.png" alt="Instagram @Brauliosneto.fire">@brauliosneto.fire
-                            </a>
-                            <a href="https://wa.me/555195123033" target="_blank">
-                                <img src="./assets/imgs/geral/whatsapp.png" alt="WhatsApp de contato Braulio">(51) 9 9512.3033
-                            </a>
-                            <a href="mailto:braulios.dornelles@gmail.com?subject=Gostaria de saber sobre os seus serviços, vim pelo site da GamaDC">
-                                <img src="./assets/imgs/geral/email.webp" alt="E-mail de contato Braulio">braulios.dornelles@gmail.com
-                            </a>
-                        </address>
+                    <div class="accordion-item  mb-2">
+                        <button class="accordion-button py-1" type="button" data-bs-toggle="collapse" data-bs-target="#item3" aria-expanded="false" aria-controls="item3">
+                            <h4 class="h5">Visão:</h4>
+                        </button>
+                        <div id="item3" class="accordion-collapse collapse" data-bs-parent="#sobreAccordion">
+                            <div class="accordion-body texto-md">
+                                <p>
+                                    Nossa visão é sermos sempre éticos e agéis no fornecimento de soluções ambulatoriais, superando expectativas e entregando melhores resultados.
+                                </p>
+                                <p>
+                                    Com uma equipe de profissionais capacitados e engajados, estamos dedicados a promover o sucesso de nossos clientes em um ambiente empresarial em constante evolução.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <h2 class="subtitulo">Braulios serviços</h2>
-                        <ul class="lista">
-                            <li>
-                                <p>Analise Preliminar de Riscos</p>
-                            </li>
-                            <li>
-                                <p>Investigação de Acidentes</p>
-                            </li>
-                            <li>
-                                <p>Integração de Segurança</p>
-                            </li>
-                            <li>
-                                <p>Palestras Motivacionais</p>
-                            </li>
-                            <li>
-                                <p>Palestras SIPAT</p>
-                            </li>
-                            <li>
-                                <p>NR 5 CIPA</p>
-                            </li>
-                            <li>
-                                <p>NR 11</p>
-                            </li>
-                            <li>
-                                <p>Brigada de Incêndio</p>
-                            </li>
-                        </ul>
+                    <div>
+                        <h4 class="h5">Conte com a GamaDC:</h4>
+                        <div class="texto-md">
+                            <p>
+                                Juntos, construiremos um futuro melhor e mais seguro para todos.
+                            </p>
+                            <p>
+                                GamaDC <br> Garantindo segurança e cuidado com a saúde no ambiente de trabalho.
+                            </p>
+                            <p id="cta">
+                                Tem alguma dúvida?<br><a href="#contato">Entre em contato agora mesmo</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
         </section>
-    </div>
-    <article class="contato-bg" id="contato">
-        <div class="contato-cont">
-            <div class="cab">
-                <h2 class="titulo-medio">Contato</h2>
-                <p>Entre em contato e saiba mais sobre como podemos ajudar a sua empresa</p>
-            </div>
-            <div class="content">
-                <div class="img">
-                    <img src="./assets/imgs/geral/entre_em_contato_com_a_gamaDC.png" alt="Formulário de contato GamaDC">
+    </article>
+    <main class="container" id="servicos">
+        <h1 class="titulo-lg mb-3" style="max-width: 32ch;">Serviços de excelência para proteger sua empresa e seus colaboradores.</h1>
+        <ul class="row justify-content-center m-0 p-0">
+            <li class="card mb-3 me-lg-3 me-0 p-3" style="width: 22.25rem;">
+                <img src="./assets/imgs/servicos1-medicina-ocupacional.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-center titulo-md">Medicina Ocupacional<br>&<br>Ambulatorial</h5>
+                    <p class="card-text texto-md-bold">Atendimento realizado diretamente no ambulatório da sua empresa.</p>
                 </div>
-                <div class="form">
-                    <form action="" method="post">
-                        <div class="campo">
-                            <input type="text" id="nome" name="nome" required>
-                            <label for="nome">Nome Completo</label>
+                <div class="card-footer bg-transparent py-0 m-auto">
+                    <a href="#medicina-ocupacional" class="btn ocupacional servicos-button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#medicina-ocupacional">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Saiba mais
+                    </a>
+                </div>
+            </li>
+            <li class="card mb-3 me-lg-3 me-0 p-3" style="width: 22.25rem;">
+                <img src="./assets/imgs/servicos2-seguranca-do-trabalho.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-center titulo-md">Exames Complementares</h5>
+                    <p class="card-text mb-1 texto-md-bold">Se for de comum acordo entre nós e a empresa contratante.</p>
+                    <p class="card-text texto-md-bold">Os Exames Complementares podem ser realizados na Prevenir de Esteio.</p>
+                </div>
+                <div class="card-footer bg-transparent py-0 m-auto">
+                    <a href="#exames-complementares" class="btn exames-complementares servicos-button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#exames-complementares">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Saiba mais
+                    </a>
+                </div>
+            </li>
+            <li class="card mb-3 p-3" style="width: 22.25rem;">
+                <img src="./assets/imgs/servicos3-palestras-treinamentos.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-center titulo-md">Treinamentos</h5>
+                    <p class="card-text texto-md-bold my-4">A Braulios Neto é nossa parceira na área de treinamentos, palestras e assessoria.</p>
+                </div>
+                <div class="card-footer bg-transparent py-0 m-auto">
+                    <a href="#treinamentos" class="btn treinamentos servicos-button" role="button" data-bs-toggle="collapse" aria-controls="#treinamentos" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Saiba mais
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <section class="todos-servicos-cont">
+            <ul class="collapse m-0 p-0" id="medicina-ocupacional">
+                <li id="medicina-ocupacional" class="card card-body">
+                    <p class="titulo-md">Nossa equipe conta com:</p>
+                    <p class="texto-md-bold">
+                        Médico do Trabalho, Médico Examinador, Técnico de Enfermagem do Trabalho e Técnico de Enfermagem.
+                    </p>
+                    <p class="texto-md-bold">
+                        Entramos com a mão de obra técnica qualificada, conforme necessidade da empresa.
+                    </p>
+                </li class="card card-body">
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_pcmso.png" class="me-2" alt="Coordenamos as atividades PCMSO - GamaDC">
+                    <h3 class="item-servicos">Coordenar PCMSO</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_exame_admissional.png" class="me-2" alt="Fazemos exames admissionais e demissionais - GamaDC">
+                    <h3 class="item-servicos">Exames Admissionais</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_exames_periodicos.png" class="me-2" alt="Realizamos exames periódicos - GamaDC">
+                    <h3 class="item-servicos">Exames Periódicos</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_mudanca_funcao.png" class="me-2" alt="Realizamos exames de mudança de função - gamadc">
+                    <h3 class="item-servicos">Mudança de Função</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_retorno_tabalho.png" class="me-2" alt="Realizamos exames de retorno ao trabalho após afastamento">
+                    <h3 class="item-servicos">Retorno ao Trabalho</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_laudo_pcd.png" class="me-2" alt="Emitimos laudos que atestam aptidão de PCDs para desempenhar suas funções">
+                    <h3 class="item-servicos">Laudos para Pessoas com Deficiência (PCD)</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_atestados.png" class="me-2" alt="Emitimos e validamos atestados, garantindo a integridade do processo.">
+                    <h3 class="item-servicos">Validação e Emissão de Atestados</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/gamadc_atendimento_ambulatorial.png" class="me-2" alt="Realizamos avaliação física para garantir o bem-estar do colaborador">
+                    <h3 class="item-servicos">Atendimento ambulatorial</h3>
+                </li>
+            </ul>
+            <ul class="collapse m-0 p-0" id="exames-complementares">
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_raioX.png" class="me-2" alt="Exame de Radiografia de torax, realizado pela empresa parceira Prevenir">
+                    <h3 class="item-servicos">Radiografia de Tórax (RX Tórax)</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_espirometria.png" class="me-2" alt="Exame de Espirometria, realizado pela empresa parceira Prevenir">
+                    <h3 class="item-servicos">Espirometria</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_audiometria.png" class="me-2" alt="Exame de Audiometria, realizado pela empresa parceira Prevenir">
+                    <h3 class="item-servicos">Audiometria</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_eletrocardiograma.png" class="me-2" alt="Eletrocardiograma realizado pela empresa parceira Prevenir">
+                    <h3 class="item-servicos">Eletrocardiograma (ECG)</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_eletroencefalograma.png" class="me-2" alt="Eletroencefalograma realizado pela empresa parceira Prevenir">
+                    <h3 class="item-servicos">Eletroencefalograma (EEG)</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_ortho_rater.png" class="me-2" alt="Exame de acuidade visual, realizado pela empresa parceira Prevenir">
+                    <h3 class="item-servicos">Ortho Rater (Exame de Acuidade Visual)</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/prevenir_outros_exames.png" class="me-2" alt="Para mais exames laboratoriais, chame via whatsApp">
+                    <h3 class="item-servicos">Outros Exames de Laboratório</h3>
+                </li>
+            </ul>
+            <ul class="collapse m-0 p-0" id="treinamentos">
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_palestras.png" class="me-2" alt="Palestra Braulios Neto">
+                    <h3 class="item-servicos">Palestras SIPAT</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_palestras.png" class="me-2" alt="Palestras Motivacionais na sua empresa Braulios Neto">
+                    <h3 class="item-servicos">Palestras Motivacionais</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_treinamento.png" class="me-2" alt="Treinamentos em Analise Preliminar de Risco Braulios Neto">
+                    <h3 class="item-servicos">Treinamento de Analise Preliminar de Risco</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_treinamento.png" class="me-2" alt="Treinamento de Investigação de Risco Braulios Neto">
+                    <h3 class="item-servicos">Treinamento de Investigação de Acidentes</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_treinamento.png" class="me-2" alt="Treinamento de Integração de Segurança para novos colaboradores Braulios Neto">
+                    <h3 class="item-servicos">Treinamento e Integração de Segurança</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_treinamento.png" class="me-2" alt="Treinamentos para NR 5 e NR 11 Braulios Neto">
+                    <h3 class="item-servicos">Treinamentos de NR 5 e NR 11</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_formacao_de_brigadista.png" class="me-2" alt="Formacao de brigadistas Braulios Neto">
+                    <h3 class="item-servicos">Formação de Brigadistas</h3>
+                </li>
+                <li class="card card-body" style="flex-direction: row; align-items: flex-end">
+                    <img src="./assets/imgs/icones/braulios_formacao_de_resgatista.png" class="me-2" alt="Formação de Resgatistas Braulios Neto">
+                    <h3 class="item-servicos">Formação de Resgatistas</h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <section class="container py-3" id="parceiros">
+        <div class="apresentacao">
+            <h2 class="titulo-lg">Conheça nossos Parceiros</h2>
+            <div class="texto-md-bold mb-3">
+                <p>Somos uma empresa preocupada em oferecer um atendimento de excelência.</p>
+                <p>Por isso contamos com parcerias para atender qualquer necessidade de nossos contratantes.</p>
+            </div>
+        </div>
+        <section class="parceiros container-fluid">
+            <div class="row">
+                <section class="card col-lg me-lg-1 mb-3 mb-lg-0 prevenir">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 border-end">
+                            <img src="./assets/imgs/geral/Prevenir-logo.png" style="max-width: 150px;" alt="Prevenir Exames Complementares">
                         </div>
-                        <div class="campo">
-                            <input type="tel" id="telefone" name="telefone" required>
-                            <label for="telefone">Telefone</label>
+                        <div class="col-md-7 bg-light">
+                            <div class="card-block p-3">
+                                <div class="texto-md-bold">
+                                    <p>Sua empresa precisa de cuidado</p>
+                                    <p>Você precisa da Prevenir</p>
+                                    <p></p>
+                                </div>
+                                <br>
+                                <br>
+                                <address class="contato">
+                                    <a href="https://maps.app.goo.gl/S7CC2UQPjJ7kYsb28">
+                                        <img src="./assets/imgs/geral/localizacao.png" alt="Endereço Prevenir">
+                                        R. Dom Pedro, n.55, Esteio | RS
+                                    </a>
+                                    <br>
+                                    <a href="tel:555134591126">
+                                        <img src="./assets/imgs/geral/telefone.png" class="me-1" alt="Telefone de contato Prevenir">
+                                        (51) 3459.1126
+                                    </a>
+                                    <br>
+                                    <br>
+                                </address>
+                                <a href="#exames-complementares" class="btn btn-primary float-md-end servicos-button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#exames-complementares">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Saiba mais
+                                </a>
+                            </div>
                         </div>
-                        <div class="campo">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">E-mail</label>
+                    </div>
+                </section>
+                <section class="card col-lg ms-lg-1 braulios">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 border-end">
+                            <img src="./assets/imgs/geral/braulio-logo2.png" style="max-width: 150px;" alt="Prevenir clinica médica esteio">
                         </div>
-                        <div class="campo">
-                            <input type="text" id="mensagem" name="mensagem" placeholder="(Opcional)">
-                            <label for="mensagem">Mensagem</label>
+                        <div class="col-md-7 bg-light">
+                            <div class="card-block p-3">
+                                <div class="texto-md-bold mb-3">
+                                    <p>Treinamentos,</p>
+                                    <p>Palestras e</p>
+                                    <p>Cursos In Company</p>
+                                </div>
+                                <address class="contato">
+                                    <a href="https://www.instagram.com/brauliosneto.fire/" target="_blank">
+                                        <img src="./assets/imgs/geral/instagram.png" class="me-1" alt="Instagram @Brauliosneto.fire">@brauliosneto.fire
+                                    </a>
+                                    <br>
+                                    <a href="https://wa.me/555195123033" target="_blank">
+                                        <img src="./assets/imgs/geral/whatsapp.png" class="me-1" alt="WhatsApp de contato Braulio">(51) 9 9512.3033
+                                    </a>
+                                    <br>
+                                    <a href="mailto:braulios.dornelles@gmail.com?subject=Gostaria de saber sobre os seus serviços, vim pelo site da GamaDC">
+                                        <img src="./assets/imgs/geral/email.webp" class="me-1" alt="E-mail de contato Braulio">braulios.dornelles@gmail.com
+                                    </a>
+                                </address>
+                                <a href="#treinamentos" class="btn btn-primary float-md-end servicos-button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="#treinamentos">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Saiba mais
+                                </a>
+                            </div>
                         </div>
-                        <div class="btn">
-                            <button>Enviar</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+    <div style="background-color: #E2EFEE;">
+        <article class="container py-lg-0 py-3" id="contato">
+            <div class="text-center pt-2">
+                <h2 class="titulo-lg">Contato</h2>
+                <p class="texto-md-bold">Entre em contato e saiba mais sobre como podemos ajudar a sua empresa</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <img src="./assets/imgs/geral/entre_em_contato_com_a_gamaDC.png" class="w-100" alt="Formulário de contato GamaDC">
+                </div>
+                <div class="col-md-6 col-12">
+                    <form action="" class="form shadow p-3 rounded mx-auto" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control border-top-0 border-end-0" id="nome" name="nome" required placeholder="">
+                            <label for="nome" class="floatingInput">Nome Completo</label>
                         </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control border-top-0 border-end-0" id="telefone" name="telefone" required placeholder="">
+                            <label for="telefone" class="floatingInput">Telefone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control border-top-0 border-end-0" id="email" name="email" required placeholder="">
+                            <label for="email" class="floatingInput">E-mail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control border-top-0 border-end-0" id="mensagem" name="mensagem" required placeholder="">
+                            <label for="mensagem" class="floatingInput">Mensagem</label>
+                        </div>
+                        <button class="servicos-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Enviar
+                        </button>
                     </form>
                 </div>
             </div>
-        </div>
-    </article>
-    <footer class="rodape-bg">
-        <div class="rodape-cont">
-            <div class="rodape-content">
-                <div class="logo-rodape">
-                    <div class="logo">
-                        <a href="#home"><img src="./assets/imgs/geral/logo_gamadc_branco.png" alt="Logotipo GamaDC"></a>
+        </article>
+    </div>
+    <footer class="bg-dark text-white pt-4" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-12">
+                    <div class="row mb-3">
+                        <a href="#home"><img src="./assets/imgs/geral/logo_gamadc_branco.png" style="max-width: 120px;" alt="Logotipo GamaDC"></a>
                     </div>
-                    <div class="sobre">
-                        <p>
-                            Há mais de 26 anos, a GamaDC cuida da saúde e segurança dos seus colaboradores. Conte com a nossa experiência e expertise para garantir o bem-estar da sua equipe, diretamente na sua empresa.
+                    <div class="row">
+                        <p style="font-family: 'Roboto', sans-serif;">
+                            Há mais de 25 anos, a GamaDC cuida da saúde e segurança dos seus colaboradores. Conte com a nossa experiência e expertise para garantir o bem-estar da sua equipe, diretamente na sua empresa.
                         </p>
                     </div>
                 </div>
-                <div class="menu-rodape">
-                    <h2>GamaDC</h2>
-                    <ul class="menu-lista-rodape">
+                <div class="col-md-6 col-lg-3 col-12 mt-3">
+                    <h5 class="h4">GamaDC</h5>
+                    <ul class="list-unstyled texto-md-bold text-white">
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="#home">
+                                Home
+                            </a>
                         </li>
                         <li>
                             <a href="#sobre-nos">Sobre Nós</a>
@@ -469,40 +492,44 @@
                         </li>
                     </ul>
                 </div>
-                <div class="parceiros-rodape">
-                    <h2>Parceiros</h2>
-                    <div class="braulios">
-                        <a href="" target="_blank">
-                            <img src="./assets/imgs/geral/braulio-logo.png" alt="Braulios Neto Treinamentos, Palestras e Assessoria in company">
+                <div class="col-md-6 col-lg-3 col-12 mt-3">
+                    <h5 class="h4">Parceiros</h5>
+                    <div class="braulios mb-4">
+                        <a href="#parceiros">
+                            <img src="./assets/imgs/geral/braulio-logo.png" style="max-width: 80px;" alt="Braulios Neto Treinamentos, Palestras e Assessoria in company">
                         </a>
                     </div>
-                    <div class="prevenir">
-                        <a href="" target="_blank">
-                            <img src="./assets/imgs/geral/Prevenir-logo.png" alt="Prevenir Esteio RS, exames de imagem">
+                    <div class="prevenir mb-2">
+                        <a href="#parceiros">
+                            <img src="./assets/imgs/geral/Prevenir-logo.png" style="max-width: 100px;" alt="Prevenir Esteio RS, exames de imagem">
                         </a>
                     </div>
                 </div>
-                <div class="contato-rodape">
-                    <h2>Contato</h2>
+                <div class="col-md-6 col-lg-3 col-12 mt-3">
+                    <h5 class="h4">Contato</h5>
                     <div class="telefone">
-                        <img src="./assets/imgs/geral/telefone-GamaDC.svg" alt="Telefone de contato GamaDC">
-                        <a href="">
-                            <p class="telefone">(51)9 9999-4444</p>
+                        <img src="./assets/imgs/geral/telefone-GamaDC.svg" style="max-width: 20px;" alt="Telefone e WhatsApp de contato GamaDC">
+                        <a href="https://wa.me/5551981184644" target="_blank" class="d-inline-block ms-1">
+                            <p class="telefone">(51)9 8118-4644</p>
                         </a>
                     </div>
                     <div class="email">
-                        <img src="./assets/imgs/geral/email-GamaDC.svg" alt="E-mail de contato GamaDC">
-                        <a href="">
+                        <img src="./assets/imgs/geral/email-GamaDC.svg" style="max-width: 20px;" alt="E-mail de contato GamaDC">
+                        <a href="mailto:gamadc@gmail.com?subject=Gostaria de saber mais informações sobre os serviços da GAMADC." class="d-inline-block ms-1">
                             <p class="e-mail">gamadc@gmail.com</p>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="copy">
-                <p>© Copyright GamaDC.</p>
-                <p>Todos os direitos reservados.</p>
-                <div class="devs">
-                    <p>Desenvolvido por <span>Luma Digital</span></p>
+            <div class="container">
+                <div class="copy justify-content-center">
+                    <div>
+                        <p>© Copyright GamaDC.</p>
+                        <p>Todos os direitos reservados.</p>
+                    </div>
+                    <div class="devs">
+                        <p>Desenvolvido por <span class="fw-bold">Luma Digital</span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -513,7 +540,9 @@
             <img src="./assets/imgs/geral/whatsapp.png" alt="Atendimento exclusivo via WhatsApp, nos chame agora mesmo" id="whatsImg">
         </a>
     </article>
-    <script src="./js/script.js"></script>
+    <script src="./js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
     <script src="./js/whatsApp.js"></script>
 </body>
 
